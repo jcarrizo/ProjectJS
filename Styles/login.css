@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --blue: #007FFC;
+  --grey: #F7F8FC;
+  --mainFont: 'Nunito Sans', sans-serif;
+  --sideFont: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: var(--blue);
+}
+#loginLeftColumn, #loginRightColumn{
+  height: 80vh;
+  /* outline: 1px solid red; */
+}
+#loginLeftColumn{
+  /* outline: 1px solid red; */
+  background-image: url("/images/login.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#loginRightColumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loginBox{
+  /* outline: 1px solid blue; */
+  font-family: var(--mainFont);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 300px;
+}
+#loginBox > div > img{
+  height: 30px;
+  margin-right: 10px;
+}
+#loginBox > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+#loginBox > h5{
+  font-weight: bold;
+  margin: 0;
+}
+#emailInput, #passwordInput{
+  border: none;
+  background-color: var(--grey);
+  margin-bottom: 5px;
+  height: 30px;
+  border-radius: 5px;
+  text-indent: 20px;
+  width: 100%;
+  /* box-shadow: inset 0px 0px 2px grey; */
+}
+#emailInput{
+  margin-top: 20px;
+}
+#emailInput::placeholder, #passwordInput::placeholder{
+  font-size: 12px;
+  transition-duration: .2s;
+}
+#emailInput:focus::placeholder, #passwordInput:focus::placeholder{
+  font-size: 8px;
+  transition-duration: .2s;
+}
+#loginButton{
+  height: 30px;
+  width: 100%;
+  color: white;
+  font-size: 12px !important;
+  background-color: var(--blue);
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+#loginButton:hover{
+  cursor: pointer;
+  color: var(--blue);
+}
+#loginButton::before{
+  content: "";
+  position: absolute;
+  background-color: var(--grey);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  transition-duration: .2s;
+}
+#loginButton:hover::before{
+  right: 0%;
+  z-index: -1;
+  opacity: 1;
+  transition-duration: .2s;
+  /* box-shadow: 2px 2px 5px black; */
+}
