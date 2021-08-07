@@ -1,6 +1,70 @@
 /* Estilos del HEADER */
 
 /* Estilos del HERO */
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+:root{
+ --blue: #007FFC;
+ --grey: #F7F8FC;
+ --mainFont: 'Nunito Sans', sans-serif;
+ --sideFont: 'Poppins', sans-serif;
+}
+.Hero{
+ background-image: url(../images/wavesOpacity\ \(3\).svg);
+ background-repeat: no-repeat;
+ width:100%;
+}
+p{
+ font-family: var(--sideFont);
+ color: #5E6282;
+ margin-bottom: 10px;
+ margin-left: 15px;
+}
+.subTitleHero{
+ font-weight: bold;
+ color: var(--blue);
+ margin: 10px;
+}
+.titleHero{
+ font-family: var(--mainFont);
+ font-weight: bolder;
+ margin-bottom: 15px;
+}
+#heroButton{
+ background-color: var(--blue);
+ color: white;
+ font-size: 14px;
+ font-weight: bold;
+ position: relative;
+ z-index: 2;
+ margin-top: 20px;
+}
+#heroButton:hover{
+ cursor: pointer;
+ color: var(--blue);
+}
+#heroButton::before{
+ content: "";
+ position: absolute;
+ background-color: var(--grey);
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 100%;
+ transition-duration: .2s;
+}
+#heroButton:hover::before{
+ right: 0%;
+ z-index: -1;
+ opacity: 1;
+ transition-duration: .2s;
+ /* box-shadow: 2px 2px 5px black; */
+}
+
+
 
 /* Estilos del CARRUSEL */
 
