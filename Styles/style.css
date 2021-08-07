@@ -16,6 +16,10 @@
  background-image: url(../images/wavesOpacity\ \(3\).svg);
  background-repeat: no-repeat;
  width:100%;
+ margin: none;
+}
+.textHero{
+ margin-top: 60px;
 }
 p{
  font-family: var(--sideFont);
