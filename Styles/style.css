@@ -9,6 +9,7 @@
 :root{
  --blue: #007FFC;
  --grey: #F7F8FC;
+ --darkBlue: #16133D;
  --mainFont: 'Nunito Sans', sans-serif;
  --sideFont: 'Poppins', sans-serif;
 }
@@ -17,12 +18,23 @@
  background-repeat: no-repeat;
  width:100%;
  margin: none;
+ padding: none;
+}
+.row{
+ margin: 0;
+}
+.imageHero{
+ margin: 0%;
+ padding: 0%;
 }
 .textHero{
- margin-top: 60px;
+ padding-top: 30px;
+ padding-left: 30px;
+ font-size: 20px;
 }
-p{
+.contentHero{
  font-family: var(--sideFont);
+ font-weight: 400;
  color: #5E6282;
  margin-bottom: 10px;
  margin-left: 15px;
@@ -37,20 +49,32 @@ p{
  font-weight: bolder;
  margin-bottom: 15px;
 }
-#heroButton{
+.buttonsHero{
+ display: flex;
+ justify-content: space-around;
+ margin: 30px;
+}
+.btnHero{
+ width: 100px;
  background-color: var(--blue);
  color: white;
- font-size: 14px;
+ font-size: 10px;
  font-weight: bold;
+ text-align: center;
  position: relative;
  z-index: 2;
- margin-top: 20px;
 }
-#heroButton:hover{
+#heroButtonCreate{
+ background-color: var(--darkBlue);
+}
+.btnHero:hover{
  cursor: pointer;
  color: var(--blue);
 }
-#heroButton::before{
+#heroButtonCreate:hover{
+ color: #16133D;
+}
+.btnHero::before{
  content: "";
  position: absolute;
  background-color: var(--grey);
@@ -60,12 +84,20 @@ p{
  right: 100%;
  transition-duration: .2s;
 }
-#heroButton:hover::before{
+.btnHero:hover::before{
  right: 0%;
  z-index: -1;
  opacity: 1;
  transition-duration: .2s;
  /* box-shadow: 2px 2px 5px black; */
+}
+@media (max-width: 700px) {
+ .imageHero{
+  height: 300px;
+ }
+ .Hero{
+  flex-direction: column-reverse;
+ }
 }
 
 
