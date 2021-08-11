@@ -18,7 +18,7 @@
   --sideFont: "Poppins", sans-serif;
 }
 .Hero {
-  background-image: url("../images/wavesOpacity\\(3\).svg");
+  background-image: url(../images/wavesOpacity.svg);
   background-repeat: no-repeat;
   width: 100%;
   margin: none;
