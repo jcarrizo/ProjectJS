@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --blue: #007FFC;
+  --grey: #F7F8FC;
+  --mainFont: 'Nunito Sans', sans-serif;
+  --sideFont: 'Poppins', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: var(--blue);
+}
+#registerLeftColumn, #registerRightColumn{
+  height: 80vh;
+  /* outline: 1px solid red; */
+}
+#registerLeftColumn{
+  /* outline: 1px solid red; */
+  background-image: url("/images/register.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#registerRightColumn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#registerBox{
+  /* outline: 1px solid blue; */
+  font-family: var(--mainFont);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 600px;
+}
+#registerBox > div > img{
+  height: 30px;
+  margin-right: 10px;
+}
+#registerImage, #registerButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+#registerBox > h5{
+  font-weight: bold;
+  margin: 0;
+}
+#emailInput, #passwordInput, #passwordInput2, #nameInput{
+  border: none;
+  background-color: var(--grey);
+  margin: 10px 0;
+  height: 30px;
+  border-radius: 5px;
+  text-indent: 20px;
+  width: 100%;
+  font-size: 12px;
+  /* box-shadow: inset 0px 0px 2px grey; */
+}
+#nameInput{
+  margin-top: 25px;
+}
+#emailInput::placeholder, #passwordInput::placeholder, #passwordInput2::placeholder, #nameInput::placeholder{
+  font-size: 12px;
+  transition-duration: .2s;
+}
+#emailInput:focus::placeholder, #passwordInput:focus::placeholder, #passwordInput2:focus::placeholder, #nameInput:focus::placeholder{
+  /* display: table-cell;
+  align-content: center; */
+  font-size: 8px;
+  transition-duration: .2s;
+}
+#termsCheck{
+   margin-right: 5px;
+}
+#terms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 12px;
+}
+#registerButton{
+  height: 30px;
+  width: 100%;
+  color: white;
+  font-size: 12px !important;
+  background-color: var(--blue);
+  position: relative;
+  z-index: 2;
+}
+#registerButton:hover{
+  cursor: pointer;
+  color: var(--blue);
+}
+#registerButton::before{
+  content: "";
+  position: absolute;
+  background-color: var(--grey);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  transition-duration: .2s;
+}
+#registerButton:hover::before{
+  right: 0%;
+  z-index: -1;
+  opacity: 1;
+  transition-duration: .2s;
+  /* box-shadow: 2px 2px 5px black; */
+}
