@@ -1,0 +1,19 @@
+footer{
+    background-color:indigo;
+}
+.footerItem{
+    font-size: 16px;
+    color: ivory
+}
+.footerSubtitle{
+    font-size: 24px;
+    color: ivory;
+}
+.footerTitle{
+    font-size: 38px;
+    color: ivory;
+
+}
+.footerRedes{
+    width: 30px;
+}
