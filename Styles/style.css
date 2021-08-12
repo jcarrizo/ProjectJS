@@ -105,10 +105,29 @@
 }
 .buttonCarousel{
  background-color: var(--darkBlue);
- width: 40px;
- height: 40px;
+ width: 35px;
+ height: 35px;
  opacity: 100%;
- margin-top: 100px;
+ border-radius: 10%;
+ top: 45%;
+}
+.carousel-control {
+ position: absolute;
+ top: 50%;
+ display: inline-block;
+}
+.carousel-control-next-icon{
+ background-image: url(../images/next-button-arrowhead.png);
+ height: 10px;
+ width: 10px;
+}
+.carousel-control-prev-icon{
+ background-image: url(../images/prev-button-arrowhead.png);
+ height: 10px;
+ width: 10px;
+}
+.imgCarouselPJ{
+ border-radius: 3%;
 }
 
 
