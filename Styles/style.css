@@ -95,12 +95,15 @@
   /* box-shadow: 2px 2px 5px black; */
 }
 @media (max-width: 700px) {
-  .imageHero {
-    height: 300px;
-  }
-  .Hero {
-    flex-direction: column-reverse;
-  }
+ .imageHero{
+  height: 300px;
+ }
+ .Hero{
+  flex-direction: column-reverse;
+ }
+ .textHero{
+  padding-top: 10px;
+ }
 }
 
 /* Estilos del CARRUSEL */
