@@ -98,6 +98,9 @@
  .Hero{
   flex-direction: column-reverse;
  }
+ .textHero{
+  padding-top: 10px;
+ }
 }
 
 
