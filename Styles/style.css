@@ -104,5 +104,10 @@
 }
 
 /* Estilos del CARRUSEL */
+/* Estilos de los comentarios */
+.titleComents h1{
+  position: center;
+  
+}
 
 /* Estilos del FOOTER */
