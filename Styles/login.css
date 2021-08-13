@@ -6,16 +6,25 @@
 :root{
   --blue: #007FFC;
   --grey: #F7F8FC;
+  --footer: #16133D;
   --mainFont: 'Nunito Sans', sans-serif;
   --sideFont: 'Poppins', sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a{
   text-decoration: none;
   color: var(--blue);
 }
-#loginLeftColumn, #loginRightColumn{
+#loginContainer{
+  width: 80vw;
   height: 80vh;
-  /* outline: 1px solid red; */
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px lightgrey;
 }
 #loginLeftColumn{
   /* outline: 1px solid red; */
@@ -23,6 +32,7 @@ a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 20px 0px 0px 20px;
 }
 #loginRightColumn{
   display: flex;
@@ -83,17 +93,22 @@ a{
   font-size: 12px !important;
   background-color: var(--blue);
   margin-top: 20px;
+  margin-bottom: 10px;
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #loginButton:hover{
   cursor: pointer;
-  color: var(--blue);
+  color: white;
+  text-shadow: 0px 0px 5px black;
 }
 #loginButton::before{
   content: "";
   position: absolute;
-  background-color: var(--grey);
+  background-color: var(--footer);
   top: 0;
   bottom: 0;
   left: 0;
