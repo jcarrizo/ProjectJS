@@ -6,6 +6,7 @@
 :root{
   --blue: #007FFC;
   --grey: #F7F8FC;
+  --footer: #16133D;
   --mainFont: 'Nunito Sans', sans-serif;
   --sideFont: 'Poppins', sans-serif;
 }
@@ -13,9 +14,19 @@ a{
   text-decoration: none;
   color: var(--blue);
 }
-#registerLeftColumn, #registerRightColumn{
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+#registerContainer{
   height: 80vh;
-  /* outline: 1px solid red; */
+  width: 80vw;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px grey;
+  background-color: white;
 }
 #registerLeftColumn{
   /* outline: 1px solid red; */
@@ -23,6 +34,7 @@ a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 20px 0px 0px 20px;
 }
 #registerRightColumn{
   display: flex;
@@ -37,7 +49,6 @@ a{
   justify-content: center;
   align-items: flex-start;
   width: 500px;
-  height: 600px;
 }
 #registerBox > div > img{
   height: 30px;
@@ -100,12 +111,11 @@ a{
 }
 #registerButton:hover{
   cursor: pointer;
-  color: var(--blue);
 }
 #registerButton::before{
   content: "";
   position: absolute;
-  background-color: var(--grey);
+  background-color: var(--footer);
   top: 0;
   bottom: 0;
   left: 0;
