@@ -31,13 +31,14 @@
   padding: 0%;
 }
 .textHero {
-  padding-top: 30px;
+  padding-top: 12px;
   padding-left: 30px;
   font-size: 20px;
 }
 .contentHero {
   font-family: var(--sideFont);
   font-weight: 400;
+  font-size: 15px;
   color: #5e6282;
   margin-bottom: 10px;
   margin-left: 15px;
@@ -47,17 +48,25 @@
   color: var(--blue);
   margin: 10px;
 }
+.titleMore{
+  font-family: var(--mainFont);
+  font-weight: bolder;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
 .titleHero {
   font-family: var(--mainFont);
   font-weight: bolder;
   margin-bottom: 15px;
+  font-size: 70px;
 }
 .buttonsHero {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 30px;
 }
 .btnHero {
+  margin-left: 30px;
   width: 100px;
   background-color: var(--blue);
   color: white;
