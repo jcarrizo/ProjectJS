@@ -1,0 +1,52 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: var(--sideFont);
+}
+.row {
+ margin: 0;
+}
+:root {
+ --blue: #007ffc;
+ --grey: #f7f8fc;
+ --darkBlue: #16133d;
+ --mainFont: "Nunito Sans", sans-serif;
+ --sideFont: "Poppins", sans-serif;
+}
+.employmentScreen{
+ justify-content: space-around;
+ margin-top: 30px;
+}
+.businessInfo{
+ border: #007ffc solid 1px;
+ height: fit-content;
+}
+.jobDescription{
+ border: #007ffc solid 1px;
+ padding: 20px;
+ font-size: 13px;
+}
+#job{
+ text-align: center;
+ font-family: var(--mainFont);
+ font-weight: bold;
+}
+#description{
+ margin-top: 15px;
+}
+ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ }
+ li::before{
+  content:"";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-image: url(../images/Logo.svg);
+  background-position: center;
+  background-size: cover;
+  margin-right: 5px;
+ }
