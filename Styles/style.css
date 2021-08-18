@@ -77,8 +77,9 @@ footer{
   background-color:#16133D;
 }
 .footerItem{
-  font-size: 16px;
-  color: ivory
+  font-family: var(--sideFont);
+  font-size: 14px;
+  color: gray;
 }
 .footerSubtitle{
   font-size: 24px;
@@ -89,6 +90,6 @@ footer{
   color: ivory;
 
 }
-.footerRedes{
+.footerNetworks{
   width: 30px;
 }
