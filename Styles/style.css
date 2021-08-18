@@ -103,7 +103,7 @@
   transition-duration: 0.2s;
   /* box-shadow: 2px 2px 5px black; */
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
  .imageHero{
   height: 300px;
  }
