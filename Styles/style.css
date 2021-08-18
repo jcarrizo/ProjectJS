@@ -1,74 +1,149 @@
 /* Estilos del HEADER */
+.navBackground {
+  background-color: #16133d;
+}
 
 /* Estilos del HERO */
-*{
- box-sizing: border-box;
- margin: 0;
- padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-:root{
- --blue: #007FFC;
- --grey: #F7F8FC;
- --mainFont: 'Nunito Sans', sans-serif;
- --sideFont: 'Poppins', sans-serif;
+:root {
+  --blue: #007ffc;
+  --grey: #f7f8fc;
+  --darkBlue: #16133d;
+  --mainFont: "Nunito Sans", sans-serif;
+  --sideFont: "Poppins", sans-serif;
 }
-.Hero{
- background-image: url(../images/wavesOpacity\ \(3\).svg);
- background-repeat: no-repeat;
- width:100%;
- margin: none;
+.Hero {
+  background-image: url(../images/wavesOpacity.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: none;
+  padding: none;
 }
-.textHero{
- margin-top: 60px;
+.row {
+  margin: 0;
 }
-p{
- font-family: var(--sideFont);
- color: #5E6282;
- margin-bottom: 10px;
- margin-left: 15px;
+.imageHero {
+  margin: 0%;
+  padding: 0%;
 }
-.subTitleHero{
- font-weight: bold;
- color: var(--blue);
- margin: 10px;
+.textHero {
+  padding-top: 12px;
+  padding-left: 30px;
+  font-size: 20px;
 }
-.titleHero{
- font-family: var(--mainFont);
- font-weight: bolder;
- margin-bottom: 15px;
+.contentHero {
+  font-family: var(--sideFont);
+  font-weight: 400;
+  font-size: 15px;
+  color: #5e6282;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
-#heroButton{
- background-color: var(--blue);
- color: white;
- font-size: 14px;
- font-weight: bold;
- position: relative;
- z-index: 2;
- margin-top: 20px;
+.subTitleHero {
+  font-weight: bold;
+  color: var(--blue);
+  margin: 10px;
 }
-#heroButton:hover{
- cursor: pointer;
- color: var(--blue);
+.titleMore{
+  font-family: var(--mainFont);
+  font-weight: bolder;
+  margin-bottom: 15px;
+  font-size: 40px;
 }
-#heroButton::before{
- content: "";
- position: absolute;
- background-color: var(--grey);
- top: 0;
- bottom: 0;
- left: 0;
- right: 100%;
- transition-duration: .2s;
+.titleHero {
+  font-family: var(--mainFont);
+  font-weight: bolder;
+  margin-bottom: 15px;
+  font-size: 70px;
 }
-#heroButton:hover::before{
- right: 0%;
- z-index: -1;
- opacity: 1;
- transition-duration: .2s;
- /* box-shadow: 2px 2px 5px black; */
+.buttonsHero {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
 }
-
-
+.btnHero {
+  margin-left: 30px;
+  width: 100px;
+  background-color: var(--blue);
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+#heroButtonCreate {
+  background-color: var(--darkBlue);
+}
+.btnHero:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+#heroButtonCreate:hover {
+  color: #16133d;
+}
+.btnHero::before {
+  content: "";
+  position: absolute;
+  background-color: var(--grey);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  transition-duration: 0.2s;
+}
+.btnHero:hover::before {
+  right: 0%;
+  z-index: -1;
+  opacity: 1;
+  transition-duration: 0.2s;
+  /* box-shadow: 2px 2px 5px black; */
+}
+@media (max-width: 700px) {
+ .imageHero{
+  height: 300px;
+ }
+ .Hero{
+  flex-direction: column-reverse;
+ }
+ .textHero{
+  padding-top: 10px;
+ }
+}
+/* Estilos del CARRUSEL Bianca */
+.carouselPositionJobs{
+  justify-content: space-around;
+ }
+ .buttonCarousel{
+  background-color: var(--darkBlue);
+  width: 35px;
+  height: 35px;
+  opacity: 100%;
+  border-radius: 10%;
+  top: 45%;
+ }
+ .carousel-control {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+ }
+ .carousel-control-next-icon{
+  background-image: url(../images/next-button-arrowhead.png);
+  height: 10px;
+  width: 10px;
+ }
+ .carousel-control-prev-icon{
+  background-image: url(../images/prev-button-arrowhead.png);
+  height: 10px;
+  width: 10px;
+ }
+ .imgCarouselPJ{
+  border-radius: 3%;
+ }
 
 /* Estilos del CARRUSEL */
 
