@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "123",
+      "usuario": "juan",
+      "email": "@hotmail",
+      "password": "123",
+      "estado": "true"
+    },
+    {
+      "id": "y0ceay25n",
+      "usuario": "dasdasd",
+      "email": "asdas",
+      "password": "123",
+      "estado": "false"
+    },
+    {
+      "id": "r86nkhga6",
+      "usuario": "marcos emmanuel",
+      "email": "marcos01@gmail.com",
+      "password": "qwerty",
+      "estado": "false"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ]
+}

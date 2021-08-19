@@ -264,9 +264,10 @@
 footer {
   background-color: #16133d;
 }
-.footerItem {
-  font-size: 16px;
-  color: ivory;
+.footerItem{
+  font-family: var(--sideFont);
+  font-size: 14px;
+  color: gray;
 }
 .footerSubtitle {
   font-size: 24px;
@@ -276,6 +277,6 @@ footer {
   font-size: 38px;
   color: ivory;
 }
-.footerRedes {
+.footerNetworks{
   width: 30px;
 }
