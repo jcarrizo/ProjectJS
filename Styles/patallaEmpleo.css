@@ -75,3 +75,8 @@ ul {
   background-size: cover;
   margin-right: 5px;
  }
+ @media (max-width: 700px) {
+  .employmentScreen{
+   flex-direction: column-reverse;
+  }
+ }
