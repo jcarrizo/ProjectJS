@@ -20,7 +20,8 @@
  margin-top: 30px;
 }
 .businessInfo{
- border: #007ffc solid 1px;
+ font-family: var(--mainFont);
+ border: #007ffc solid 2px;
  height: 450px;
  width: 250px;
  box-sizing: border-box;
@@ -29,8 +30,14 @@
  justify-items: center;
  align-items: center;
 }
+.businessInfo p{
+ margin: auto;
+ color: var(--blue);
+ font-weight: lighter;
+ margin-top: 10px;
+}
 .jobDescription{
- border: #007ffc solid 1px;
+ border: #007ffc solid 2px;
  padding: 20px;
  font-size: 13px;
 }
@@ -38,7 +45,7 @@
  width: 80%;
  height: 30%;
  margin: auto;
- margin-top: 15px;
+ border-radius: 10%;
 }
 #nameCompany{
  text-align: center;
