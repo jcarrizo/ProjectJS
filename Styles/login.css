@@ -122,3 +122,44 @@ a{
   transition-duration: .2s;
   /* box-shadow: 2px 2px 5px black; */
 }
+@media (max-width: 1024px){
+  #loginContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #loginLeftColumn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -2;
+    border-radius: 20px;
+  }
+  #loginLeftColumn::after{
+    content: "";
+    background-color: black;
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+  }
+  #loginRightColumn{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #loginBox{
+    width: 80%;
+  }
+}
