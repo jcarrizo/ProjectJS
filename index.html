@@ -1,202 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/style.css">
     <title>Document</title>
   </head>
 
-  <body>
-    <!-- Aca comienza el HEADER -->
-    <header>
-      <nav class="navbar navbar-light navBackground">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light fs-1" href="#">
-            <img
-              src="images/Logo.svg"
-              alt=""
-              width="40"
-              height=""
-              class="mb-lg-2"
-            />
-            FirstJob
-          </a>
-          <div class="d-flex">
-            <a class="navbar-brand text-light fs-5" href="">Jennifer Aniston</a>
-            <button
-              class="btn btn-success fs-5 ps-4 pe-4"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation "
-            >
-              Login
-            </button>
-          </div>
+<body>
+  <!-- Aca comienza el HEADER -->
+  <header>
+    <nav class="navbar navbar-light navBackground">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fs-1" href="#">
+          <img src="images/Logo.svg" alt="" width="40" height="" class="mb-lg-2" />
+          FirstJob
+        </a>
+        <div class="col-md-3 text-end me-5" id="botones">
+          <a href="login.html"> <button type="button" class="btn btn-outline-primary me-2">Login</button></a>
+
+          <a href="register.html"><button type="button" class="btn btn-primary">Sign-up</button></a>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Aca comienza el MAIN -->
-    <main>
-        <section class="Hero row ">
-            <section class="textHero col-lg-6 mb-2">
-                <h5 class="subTitleHero">Never stop looking</h5>
-                <h1 class="titleHero">Find your dream job</h1>
-                <div class="contentHero">
-                    <p>At FirstJob you can search thousands of jobs online to find your next career challenge. We have
-                        tools for job search, CV, company evaluations and more.</p>
-                    <p>Offer jobs and expand your working family. We put you in contact with professionals so that you
-                        can evaluate and put them to the test </p>
-                </div>
-                <div class="buttonsHero">
-                  <a type="button" id="heroButtonSearch" class="btnHero btn-lg" href="">SEARCH</a>
-                  <a type="button" id="heroButtonCreate" class="btnHero btn-lg" href="">OFFER JOB</a>
-              </div>
-            </section>
-            <section class="col-lg-6 p-0">
-                <img src="./images/hero.png" alt="shakehands" class="imageHero w-100">
-            </section>
-        </section>
-
-            <!-- Company Carousel -->
-
-        <section class="marginCarouselSection">
-          <div class="carouselF m-lg-5 d-flex containerCompanyCarousel">
-            <div class="wrap">
-                <ul class="iconsCarouselSize">
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/1.jpg"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/2.jpg"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/3.jpg"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/4.jpg"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/5.png"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/6.png"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/7.png"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/8.png"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/9.png"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/10.png"></li>"
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/11.png"></li>
-                    <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/12.png"></li>                 
-            </div>
+  <!-- Aca comienza el MAIN -->
+  <main>
+    <section class="Hero row ">
+      <section class="textHero col-lg-6 mb-2">
+        <h5 class="subTitleHero">Never stop looking</h5>
+        <h1 class="titleHero">Find your dream job</h1>
+        <div class="contentHero">
+          <p>At FirstJob you can search thousands of jobs online to find your next career challenge. We have
+            tools for job search, CV, company evaluations and more.</p>
+          <p>Offer jobs and expand your working family. We put you in contact with professionals so that you
+            can evaluate and put them to the test </p>
         </div>
-        </section>
-
-        <!-- Job Carousel -->
-
-        <section class="carouselPositionJobs row">
-          <section class="col-lg-5 m-2">
-              <div id="carouselExampleControls" class="carousel slide px-3" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="./images/carouselJobs.jpg" class="d-block w-100 imgCarouselPJ" alt="office Job">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./images/carouselJobs1.jpg" class="d-block w-100 imgCarouselPJ" alt="engineering Job">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="./images/carouselJobs2.jpg" class="d-block w-100 imgCarouselPJ" alt="teacher presentation Job">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev buttonCarousel" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next buttonCarousel" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-          </section>
-            <section class="col-lg-6 p-4">
-                <h1 class="titleMore">Hundreds jobs are waiting for you.</h1>
-                <p class="contentHero">Enhance your opportunities and open yourself to new job offers. </p>
-                <div class="buttonsHero m-3">
-                  <a type="button" id="heroButtonSearch" class="btnHero btn-lg" href="">SEARCH</a>
-                  <a type="button" id="heroButtonCreate" class="btnHero btn-lg" href="">OFFER JOB</a>
-              </div>
-            </section>
+        <div class="buttonsHero">
+          <a type="button" id="heroButtonSearch" class="btnHero btn-lg" href="">SEARCH</a>
+          <a type="button" id="heroButtonCreate" class="btnHero btn-lg" href="">OFFER JOB</a>
+        </div>
       </section>
-    </main>
+      <section class="col-lg-6 p-0">
+        <img src="./images/hero.png" alt="shakehands" class="imageHero w-100">
+      </section>
+    </section>
 
-    <!-- Aca comienza el FOOTER -->
-    <footer class="d-flex pt-5 p-4 flex-column flex-sm-column flex-md-row flex-lg-row justify-content-around">
-      <div class="d-flex flex-column align-items-center col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
-        <div class="d-flex justify-content-center">
-          <img
-              src="images/Logo.svg"
-              alt=""
-              width="35"
-              height=""
-              class="mb-lg-2"
-            />
-          <p class="footerTitle ms-3">Workovia</p>
+    <!-- Company Carousel -->
+
+    <section class="marginCarouselSection">
+      <div class="carouselF m-lg-5 d-flex containerCompanyCarousel">
+        <div class="wrap">
+          <ul class="iconsCarouselSize">
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/1.jpg"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/2.jpg"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/3.jpg"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/4.jpg"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/5.png"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/6.png"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/7.png"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/8.png"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/9.png"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/10.png"></li>"
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/11.png"></li>
+            <li> <img class="me-lg-5 ms-lg-5" src="images/carouselCompany/12.png"></li>
         </div>
-        <ul class="nav flex-column ms-4">
-          <li class="nav-item mb-2 footerItem mt-0">We're brand strategy and digital searching jobs agency, building bridges between the society</li>  
-        </ul>
       </div>
-      <div class="d-flex col-sm-none col-md-1 col-lg-1">
-      </div>
-      <div class="d-flex col-12 col-sm-6 col-md-4 col-lg-4 mb-5 ms-4">
-        <div class="d-flex flex-column align-items-start col-6">
-          <p class="footerSubtitle">SERVICES</p>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2 footerItem mt-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
-            <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Partner with freehand</a></li>
-            <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Apps & Plugins</a></li>
-            <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">FAQ</a></li>
-            <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">UI Kit</a></li>
-          </ul>
-        </div>
-        <div class="col-2 d-flex flex-column align-items-start col-6">
-          <p class="footerSubtitle ms-0">COMPANY</p>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2 footerItem mt-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
-            <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
-            <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Carrers</a></li>
-          </ul>
-        </div>    
-      </div>
-      <div class="col-2 d-flex flex-column align-items-center align-items-md-start align-items-lg-start col-12 col-sm-3 col-md-3 col-lg-2 mb-5">
-        <p class="footerSubtitle ms-0">CONTACT US</p>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2 footerSubtitle">mail@freehand.io</li>
-          <li class="nav-item mb-2 footerItem">Dirección: Av. Salta 142</li>
-          <li class="nav-item mb-2 footerItem">Tel: 3815-152548</li>
-          <li class="nav-item mb-2 mt-4">
-            <div class="d-flex justify-content-around">
-              <a href="https://www.facebook.com" target="_blank"><img class="me-2 footerNetworks" src="./images/footerImages/facebook.png" alt=""></a>
-              <a href="https://www.Instagram.com" target="_blank"><img class="me-2 footerNetworks" src="./images/footerImages/instagram.png" alt=""></a>
-              <a href="https://www.twitter.com" target="_blank"><img class="me-2 footerNetworks" src="./images/footerImages/twitter.png" alt=""></a>
+    </section>
+
+    <!-- Job Carousel -->
+
+    <section class="carouselPositionJobs row">
+      <section class="col-lg-5 m-2">
+        <div id="carouselExampleControls" class="carousel slide px-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/carouselJobs.jpg" class="d-block w-100 imgCarouselPJ" alt="office Job">
             </div>
+            <div class="carousel-item">
+              <img src="./images/carouselJobs1.jpg" class="d-block w-100 imgCarouselPJ" alt="engineering Job">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/carouselJobs2.jpg" class="d-block w-100 imgCarouselPJ" alt="teacher presentation Job">
+            </div>
+          </div>
+          <button class="carousel-control-prev buttonCarousel" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next buttonCarousel" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="col-lg-6 p-4">
+        <h1 class="titleMore">Hundreds jobs are waiting for you.</h1>
+        <p class="contentHero">Enhance your opportunities and open yourself to new job offers. </p>
+        <div class="buttonsHero m-3">
+          <a type="button" id="heroButtonSearch" class="btnHero btn-lg" href="">SEARCH</a>
+          <a type="button" id="heroButtonCreate" class="btnHero btn-lg" href="">OFFER JOB</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Aca comienza el FOOTER -->
+  <footer class="d-flex pt-5 p-4 flex-column flex-sm-column flex-md-row flex-lg-row justify-content-around">
+    <div class="d-flex flex-column align-items-center col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
+      <div class="d-flex justify-content-center">
+        <img src="images/Logo.svg" alt="" width="35" height="" class="mb-lg-2" />
+        <p class="footerTitle ms-3">Workovia</p>
+      </div>
+      <ul class="nav flex-column ms-4">
+        <li class="nav-item mb-2 footerItem mt-0">We're brand strategy and digital searching jobs agency, building
+          bridges between the society</li>
+      </ul>
+    </div>
+    <div class="d-flex col-sm-none col-md-1 col-lg-1">
+    </div>
+    <div class="d-flex col-12 col-sm-6 col-md-4 col-lg-4 mb-5 ms-4">
+      <div class="d-flex flex-column align-items-start col-6">
+        <p class="footerSubtitle">SERVICES</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 footerItem mt-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+          <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Partner with freehand</a>
           </li>
+          <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Apps & Plugins</a></li>
+          <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">FAQ</a></li>
+          <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">UI Kit</a></li>
         </ul>
       </div>
-    </footer>
+      <div class="col-2 d-flex flex-column align-items-start col-6">
+        <p class="footerSubtitle ms-0">COMPANY</p>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 footerItem mt-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
+          <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+          <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Carrers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="col-2 d-flex flex-column align-items-center align-items-md-start align-items-lg-start col-12 col-sm-3 col-md-3 col-lg-2 mb-5">
+      <p class="footerSubtitle ms-0">CONTACT US</p>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2 footerSubtitle">mail@freehand.io</li>
+        <li class="nav-item mb-2 footerItem">Dirección: Av. Salta 142</li>
+        <li class="nav-item mb-2 footerItem">Tel: 3815-152548</li>
+        <li class="nav-item mb-2 mt-4">
+          <div class="d-flex justify-content-around">
+            <a href="https://www.facebook.com" target="_blank"><img class="me-2 footerNetworks"
+                src="./images/footerImages/facebook.png" alt=""></a>
+            <a href="https://www.Instagram.com" target="_blank"><img class="me-2 footerNetworks"
+                src="./images/footerImages/instagram.png" alt=""></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="me-2 footerNetworks"
+                src="./images/footerImages/twitter.png" alt=""></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/carousel.js"></script>
-    <script src="JS/app.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="js/carousel.js"></script>
+  <script src="JS/index.js"></script>
+</body>
+
 </html>
