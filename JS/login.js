@@ -26,6 +26,10 @@ const CompararDatos = (email, password) => {
 
                 PatchUsuarioDB(tabla, element.id);
 
+                localStorage.setItem("DatoAPasar", btoa(element.id));
+
+                localStorage.setItem("usuario", element.usuario);
+
                 window.location.href = "index.html";
 
             } else {

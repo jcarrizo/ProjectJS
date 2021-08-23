@@ -37,6 +37,8 @@ const PostApiRegister = async (idTxt, usuarioTxt, emailTxt, passwordTxt, tabla) 
 
 
 
+
+//Cambia el estado del usuario a True
 const PatchUsuarioDB = async (tabla, id) => {
 
     await fetch(`${url}/${tabla}/${id}`, {
@@ -50,3 +52,20 @@ const PatchUsuarioDB = async (tabla, id) => {
     });
 
 }
+
+
+
+//Cambia el estado del Usuario a False
+
+const LogOutDB = async (tabla, id) => {
+    await fetch(`${url}/${tabla}/${id}`, {
+        method: "PATCH",
+        body: JSON.stringify({
+            estado: "false",
+        }),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8",
+        },
+    });
+};
+

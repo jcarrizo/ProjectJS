@@ -30,6 +30,11 @@ const GetDataHTML = () => {
 
             PostApiRegister(id, usuario, email, password1, tabla);
 
+            localStorage.setItem("DatoAPasar", btoa(id));
+
+            localStorage.setItem("usuario", usuario);
+
+
             window.location.href = "index.html";
 
         } else {
