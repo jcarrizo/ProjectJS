@@ -26,6 +26,8 @@ const CompararDatos = (email, password) => {
 
                 PatchUsuarioDB(tabla, element.id);
 
+                window.location.href = "index.html";
+
             } else {
                 console.log("DesLogeado")
             }
