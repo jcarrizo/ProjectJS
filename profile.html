@@ -113,7 +113,7 @@
           </section>
 
           <section class="col-12 col-lg-6 mb-2">
-            <form class="frmPosts m-1 mt-4 rounded-pill">
+            <form class="frmPosts m-1 mt-4 rounded-pill border border-dark">
               <div class="frmTitle m-3">
                 <h2>Posts</h2>
               </div>  
@@ -126,8 +126,9 @@
               <button type="submit" class="btn btn-primary mb-3 btnPosts">Publish</button>
             </form>
 
-            <section class="stories">
-              <div class="story border border-5">
+            <section class="activity mt-3 border-top border-secondary border-2 m-2">
+              <h1>Activity</h1>
+              <div class="posts border border-secondary rounded">
                 <div class="d-flex justify-content-between">
                   <div class="d-flex">
                     <img src="./images/profileImages/GlobantPhoto.png" alt="" class="posterImgStory rounded-circle">
@@ -155,13 +156,16 @@
                   <a href="#"><img src="./images/profileImages/WorkoviaPost.png" class="imgStory" alt=""></a>
                 </div>
                 <div>
-                  <div>
-                    <span class="emtcStory">😀</span>
-                    <span>102</span>
-                  </div>
-                  <div>
-                    <span>19</span>
-                    <span>Comments</span>
+                  <p class="m-1">
+                    <a class="btn btn-light" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <span>19</span>
+                      <span>Comments</span>
+                    </a>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                   
+                    </div>
                   </div>
                 </div>
               </div>
@@ -169,9 +173,9 @@
           </section>
           
           <section class="col-12 col-lg-3 mb-2 d-flex flex-column">
-            <div class="asideRight d-flex rounded m-4">
+            <div class="asideRight d-flex rounded m-4 border border-dark">
               <div class="asideRightTitle rounded">
-                <h2>My postulations (6)</h1>
+                <h3><a href="#">Postulations (6)</a></h3>
               </div>
               <div class="asideRightBody">
                 <a href="#" class="asideRightLink"><img src="./images/profileImages/GlobantPhoto.png" alt="" class="asideRightIcon">Globant</a>
@@ -182,9 +186,9 @@
                 <a href="#" class="asideRightLink"><img src="./images/profileImages/GlobantPhoto.png" alt="" class="asideRightIcon">Globant</a>
               </div>
             </div>
-            <div class="asideRight d-flex rounded m-4">
+            <div class="asideRight d-flex rounded m-4 border border-dark">
               <div class="asideRightTitle rounded">
-                <h2>Contacts (144)</h1>
+                <h3><a href="#">Contacts (144)</a></h3>
               </div>
               <div class="asideRightBody">
                 <a href="#" class="asideRightLink"><img src="./images/profileImages/GlobantPhoto.png" alt="" class="asideRightIcon">Globant</a>

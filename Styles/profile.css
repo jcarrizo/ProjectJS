@@ -22,14 +22,15 @@
     flex-direction: column;
 }
 .asideRightTitle{
-    background-color: #007FFC;
+    background-color: #16133D;
+    color: ivory;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .asideRightBody{
     padding-top: 3%;
-    background-color:#E0E0E0;
+    background-color:whitesmoke;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -74,11 +75,17 @@
 
 /*STORIES
 -------------------------------------------*/
-.stories{}
-.story{}
+.activity{
+    
+  
+}
+.posts{
+    background-color: whitesmoke;
+}
 .posterImgStory{
     width:25%;
     height:100%;
+    padding: 3%
 }
 .spnHour{
     font-size: 14px;
