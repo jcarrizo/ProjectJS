@@ -111,13 +111,67 @@
               </div>
             </div>
           </section>
-          <section class="col-12 col-lg-6 mb-2">
 
+          <section class="col-12 col-lg-6 mb-2">
+            <form class="frmPosts m-1 mt-4 rounded-pill">
+              <div class="frmTitle m-3">
+                <h2>Posts</h2>
+              </div>  
+              <div class="mb-3 frmPostsInput">
+                <input type="text" class="txtPosts rounded" id="txtPosts">
+              </div>
+              <div class="mb-3 frmPostsPanel">
+                  <input class="form-control form-control-sm" id="formFileSm" type="file">
+              </div>
+              <button type="submit" class="btn btn-primary mb-3 btnPosts">Publish</button>
+            </form>
+
+            <section class="stories">
+              <div class="story border border-5">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <img src="./images/profileImages/GlobantPhoto.png" alt="" class="posterImgStory rounded-circle">
+                    <div class="d-flex flex-column justify-content-center m-1">
+                      <h4 class="m-1">Globant</h4>
+                      <span class="spnHour ms-1">1 h</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="btn-group">
+                      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ...
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>Edit</li>
+                        <li>Delete</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <span class="spnStory m-3">Today we'are setting up a new proyect, Workovia</span>
+                  </div>
+                  <a href="#"><img src="./images/profileImages/WorkoviaPost.png" class="imgStory" alt=""></a>
+                </div>
+                <div>
+                  <div>
+                    <span class="emtcStory">😀</span>
+                    <span>102</span>
+                  </div>
+                  <div>
+                    <span>19</span>
+                    <span>Comments</span>
+                  </div>
+                </div>
+              </div>
+            </section>
           </section>
+          
           <section class="col-12 col-lg-3 mb-2 d-flex flex-column">
             <div class="asideRight d-flex rounded m-4">
               <div class="asideRightTitle rounded">
-                <h1>My postulations</h1>
+                <h2>My postulations (6)</h1>
               </div>
               <div class="asideRightBody">
                 <a href="#" class="asideRightLink"><img src="./images/profileImages/GlobantPhoto.png" alt="" class="asideRightIcon">Globant</a>
@@ -130,7 +184,7 @@
             </div>
             <div class="asideRight d-flex rounded m-4">
               <div class="asideRightTitle rounded">
-                <h1>My proyects</h1>
+                <h2>Contacts (144)</h1>
               </div>
               <div class="asideRightBody">
                 <a href="#" class="asideRightLink"><img src="./images/profileImages/GlobantPhoto.png" alt="" class="asideRightIcon">Globant</a>
@@ -144,9 +198,7 @@
           </section>
           
         </section>
-        </section>
-        
-     
+      </section>    
     </main>
 
     <!-- Aca comienza el FOOTER -->
