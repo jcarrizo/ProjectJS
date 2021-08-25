@@ -40,11 +40,16 @@ const CargarCards = () => {
         .then(json => {
 
             json.forEach((element) => {
+
+
+                var image = new Image();
+                image.src = element.logoEmpresa;
+
                 if (element.tipoPF == "1") {
                     listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
           <div class="row g-0">
               <div class="col-md-4 mt-5">
-                  <img src="Images/RolllingLogo.png" class="img-fluid rounded-start p-2" alt="...">
+                  <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
               </div>
               <div class="col-md-8">
                   <div class="card-body">
@@ -70,7 +75,7 @@ const CargarCards = () => {
                     listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
           <div class="row g-0">
               <div class="col-md-4 mt-5">
-                  <img src="Images/RolllingLogo.png" class="img-fluid rounded-start p-2" alt="...">
+                  <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
               </div>
               <div class="col-md-8">
                   <div class="card-body">
@@ -104,26 +109,37 @@ const CargarCards = () => {
 
 const PostApi = (NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion) => {
 
-    let _data = {
-        id: ID(),
-        nombreEmpresa: NombreEmpresa,
-        web: Web,
-        logoEmpresa: Imagen,
-        puesto: Puesto,
-        tipoPF: Tipo,
-        vacante: Vacante,
-        descripcion: Descripcion,
-        tiempo: FechaHora()
+    var file = Imagen[0];
+
+    var reader = new FileReader();
+    reader.onloadend = function () {
+
+        let _data = {
+            id: ID(),
+            nombreEmpresa: NombreEmpresa,
+            web: Web,
+            logoEmpresa: reader.result,
+            puesto: Puesto,
+            tipoPF: Tipo,
+            vacante: Vacante,
+            descripcion: Descripcion,
+            tiempo: FechaHora()
+        }
+
+        fetch('http://localhost:3000/jobs', {
+            method: "POST",
+            body: JSON.stringify(_data),
+            headers: { "Content-type": "application/json; charset=UTF-8" }
+        })
+            .then(response => response.json())
+            .then(json => console.log(json))
+            .catch(err => console.log(err));
+
+
+
     }
 
-    fetch('http://localhost:3000/jobs', {
-        method: "POST",
-        body: JSON.stringify(_data),
-        headers: { "Content-type": "application/json; charset=UTF-8" }
-    })
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(err => console.log(err));
+    reader.readAsDataURL(file);
 
     CargarCards();
 }
@@ -153,7 +169,6 @@ const CargarFormulario = (id) => {
             console.log(json)
             datoId = id;
             document.getElementById("NombreEmpresa").value = json.nombreEmpresa;
-            document.getElementById("InputFile").value = "";
             document.getElementById("Web").value = json.web;
             document.getElementById("Puesto").value = json.puesto;
             document.getElementById("Tipo").value = json.tipoPF;
@@ -167,27 +182,37 @@ const CargarFormulario = (id) => {
 
 //Editar elemento de la API
 
-const EditarAPI = (NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion) => {
+const EditarAPI = (ID, NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion) => {
 
-    fetch(`http://localhost:3000/jobs/${datoId}`, {
-        method: 'PATCH',
-        body: JSON.stringify({
-            id: datoId,
-            nombreEmpresa: NombreEmpresa,
-            web: Web,
-            logoEmpresa: Imagen,
-            puesto: Puesto,
-            tipoPF: Tipo,
-            vacante: Vacante,
-            descripcion: Descripcion,
-            tiempo: FechaHora()
-        }),
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    })
-        .then(response => response.json())
-        .then(json => console.log(json))
+    var file = Imagen[0];
+    var reader = new FileReader();
+    reader.onloadend = function () {
+
+        // console.log(datoId);
+        fetch(`http://localhost:3000/jobs/${ID}`, {
+            method: 'PATCH',
+            body: JSON.stringify({
+                id: ID,
+                nombreEmpresa: NombreEmpresa,
+                web: Web,
+                logoEmpresa: reader.result,
+                puesto: Puesto,
+                tipoPF: Tipo,
+                vacante: Vacante,
+                descripcion: Descripcion,
+                tiempo: FechaHora()
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        })
+            .then(response => response.json())
+            .then(json => console.log(json))
+
+    }
+    reader.readAsDataURL(file);
+
+
 
 };
 
@@ -211,11 +236,12 @@ formularioUI.addEventListener('submit', (e) => {
     let Descripcion = document.getElementById("Descripcion").value;
 
 
+    console.log(datoId);
     if (datoId == "") {
         PostApi(NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion);
     } else {
 
-        EditarAPI(NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion);
+        EditarAPI(datoId, NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion);
     }
 
     datoId = "";
