@@ -181,6 +181,7 @@
   margin: 30px;
 }
 .btnHero {
+  text-decoration: none;
   width: 200px;
   background-color: var(--blue);
   color: white;
