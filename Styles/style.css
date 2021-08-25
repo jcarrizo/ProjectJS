@@ -148,18 +148,18 @@
 .textHero {
   padding-top: 12px;
   padding-left: 30px;
-  font-size: 20px;
 }
 .contentHero {
   font-family: var(--sideFont);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 32px;
   color: #5e6282;
   margin-bottom: 10px;
   margin-left: 15px;
 }
 .subTitleHero {
   font-weight: bold;
+  font-size: 30px;
   color: var(--blue);
   margin: 10px;
 }
@@ -167,7 +167,7 @@
   font-family: var(--mainFont);
   font-weight: bolder;
   margin-bottom: 15px;
-  font-size: 40px;
+  font-size: 70px;
 }
 .titleHero {
   font-family: var(--mainFont);
@@ -177,15 +177,14 @@
 }
 .buttonsHero {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 30px;
 }
 .btnHero {
-  margin-left: 30px;
-  width: 100px;
+  width: 200px;
   background-color: var(--blue);
   color: white;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -227,6 +226,19 @@
   }
   .textHero {
     padding-top: 10px;
+  }
+  .contentHero {
+    font-size: 20px;
+  }
+  .titleMore {
+    font-size: 40px;
+  }
+  .btnHero {
+    width: 120px;
+    font-size: 15px;
+  }
+  .titleHero {
+    font-size: 60px;
   }
 }
 /* Estilos del CARRUSEL Bianca */
