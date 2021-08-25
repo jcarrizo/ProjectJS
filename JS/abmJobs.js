@@ -3,6 +3,8 @@ const formularioUI = document.getElementById("formulario");
 const listaEmpleosUI = document.getElementById("listaEmpleos");
 
 let IdElegido = localStorage.getItem("DatoAPasar");
+document.getElementById("nameUsuario").innerHTML = localStorage.getItem("usuario");
+
 let datoId = "";
 
 

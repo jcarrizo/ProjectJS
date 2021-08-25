@@ -19,7 +19,7 @@ const verificarLog = (IdElegido, tablaUsuarios) => {
 
                 botonesUI.innerHTML = `
             <div class="dropdown text-end row">
-            <p class="fs-4 me-2 col-9 text-end "> ${data.usuario} </p>
+            <p class="fs-4 me-2 col-9 text-end " style = "color: white;"> ${data.usuario} </p>
           <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle col-2" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
           </a>
