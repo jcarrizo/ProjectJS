@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Aca comienza el HEADER -->
+    <header>
+        <nav class="navbar navbar-light navBackground">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fs-1" href="#">
+                    <img src="images/Logo.svg" alt="" width="40" height="" class="mb-lg-2" />
+                    FirstJob
+                </a>
+                <div class="dropdown text-end row">
+                    <p class="fs-4 me-2 col-9 text-end "> ${data.usuario} </p>
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle col-2" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">Nuevo Empleo...</a></li>
+                        <li><a class="dropdown-item" href="editarUsuario.html">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" onclick="LogOut('${tablaUsuarios}')">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <!-- FORMULARIO -->
+
+        <section>
+            <div class="container mt-5">
+
+                <h3 class="mb-4"><i class="bi bi-bag-plus-fill"></i> ABM TRABAJOS</h3>
+
+                <form id="formulario">
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="a" id="NombreEmpresa" required></textarea>
+                        <label for="floatingTextarea">Nombre Empresa</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="a" id="Web" required></textarea>
+                        <label for="floatingTextarea">Web Empresa</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Logo Empresa</label>
+                        <input class="form-control" type="file" id="InputFile" accept="image/png, image/jpeg">
+                    </div>
+
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="a" id="Puesto" required></textarea>
+                        <label for="floatingTextarea">Titulo del Puesto</label>
+                    </div>
+
+                    <select class="form-select mb-3" id="Tipo" aria-label="Default select example" required>
+                        <option value="1">Full-Time</option>
+                        <option value="2">Part-Time</option>
+                    </select>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="a" id="Vacante" required></textarea>
+                        <label for="floatingTextarea">Vacantes</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="a" id="Descripcion" style="height: 200px"
+                            required></textarea>
+                        <label for="floatingTextarea2">Descripcion del Puesto</label>
+                    </div>
+
+                    <!-- <input class="form-control mb-3" id="disabledIndex" value="" type="text"
+                        placeholder="Index del array para editar" disabled> -->
+
+                    <button type="submit" class="btn btn-primary mt-3"> Guardar</button>
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- CARDS EMPLEOS -->
+
+        <section>
+
+            <div class="container mt-5 mb-5">
+
+                <div class="row">
+
+                    <h3 class="mb-5 col-10"><i class="bi bi-briefcase-fill"></i>TRABAJOS PUBLICADOS</h3>
+
+                </div>
+
+
+
+                <div id="listaEmpleos" class="row" style="margin-right: -150px;">
+
+                    <div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col-md-4 mt-5">
+                                <img src="Images/RolllingLogo.png" class="img-fluid rounded-start p-2" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="card-header bg-transparent border-primary">
+                                        Nombre de la Empresa</div>
+                                    <div class="row col-6">
+                                        <b class="col-12 mt-2 mb-3">Titulo Puesto:</b>
+                                        <b class="col-12 mb-3">Tipo: </b>
+                                        <b class="col-12 mb-3">Vacantes: </b>
+                                    </div>
+                                    <div class="btn-group " role="group" aria-label="Basic outlined example">
+                                        <button type="button" class="btn btn-outline-primary btn-lg">Editar</button>
+                                        <button type="button" class="btn btn-outline-danger btn-lg">Eliminar</button>
+                                    </div>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="" style="width: 1%;"></div>
+
+                </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Aca comienza el FOOTER -->
+    <footer class="d-flex pt-5 p-4 flex-column flex-sm-column flex-md-row flex-lg-row justify-content-around">
+        <div class="d-flex flex-column align-items-center col-12 col-sm-6 col-md-3 col-lg-3 mb-5">
+            <div class="d-flex justify-content-center">
+                <img src="images/Logo.svg" alt="" width="35" height="" class="mb-lg-2" />
+                <p class="footerTitle ms-3">Workovia</p>
+            </div>
+            <ul class="nav flex-column ms-4">
+                <li class="nav-item mb-2 footerItem mt-0">We're brand strategy and digital searching jobs agency,
+                    building
+                    bridges between the society</li>
+            </ul>
+        </div>
+        <div class="d-flex col-sm-none col-md-1 col-lg-1">
+        </div>
+        <div class="d-flex col-12 col-sm-6 col-md-4 col-lg-4 mb-5 ms-4">
+            <div class="d-flex flex-column align-items-start col-6">
+                <p class="footerSubtitle">SERVICES</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 footerItem mt-2"><a href="#" class="nav-link p-0 text-muted">Blog</a></li>
+                    <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Partner with
+                            freehand</a>
+                    </li>
+                    <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Apps & Plugins</a>
+                    </li>
+                    <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">FAQ</a></li>
+                    <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">UI Kit</a></li>
+                </ul>
+            </div>
+            <div class="col-2 d-flex flex-column align-items-start col-6">
+                <p class="footerSubtitle ms-0">COMPANY</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2 footerItem mt-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
+                    <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item mb-2 footerItem"><a href="#" class="nav-link p-0 text-muted">Carrers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="col-2 d-flex flex-column align-items-center align-items-md-start align-items-lg-start col-12 col-sm-3 col-md-3 col-lg-2 mb-5">
+            <p class="footerSubtitle ms-0">CONTACT US</p>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2 footerSubtitle">mail@freehand.io</li>
+                <li class="nav-item mb-2 footerItem">Dirección: Av. Salta 142</li>
+                <li class="nav-item mb-2 footerItem">Tel: 3815-152548</li>
+                <li class="nav-item mb-2 mt-4">
+                    <div class="d-flex justify-content-around">
+                        <a href="https://www.facebook.com" target="_blank"><img class="me-2 footerNetworks"
+                                src="./images/footerImages/facebook.png" alt=""></a>
+                        <a href="https://www.Instagram.com" target="_blank"><img class="me-2 footerNetworks"
+                                src="./images/footerImages/instagram.png" alt=""></a>
+                        <a href="https://www.twitter.com" target="_blank"><img class="me-2 footerNetworks"
+                                src="./images/footerImages/twitter.png" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="JS/abmJobs.js"></script>
+</body>
+
+</html>

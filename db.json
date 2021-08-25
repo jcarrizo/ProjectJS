@@ -29,11 +29,28 @@
       "estado": "false"
     }
   ],
-  "comments": [
+  "jobs": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "_wo9oqdq5c",
+      "nombreEmpresa": "RollingCode123",
+      "web": "www.rollingCode.com",
+      "logoEmpresa": {},
+      "puesto": "Full-Stacks",
+      "tipoPF": "1",
+      "vacante": "2",
+      "descripcion": "We are a digitally native technology services company where innovation, design, and engineering meet scale. We use some of the latest technologies in the digital and cognitive fields to empower organizations in every aspect.",
+      "tiempo": "12-8-2021 18:37:38"
+    },
+    {
+      "id": "_e27wh722n",
+      "nombreEmpresa": "CoderHouses",
+      "web": "www.CoderHouse.com",
+      "logoEmpresa": {},
+      "puesto": "Diseñador Grafico",
+      "tipoPF": "2",
+      "vacante": "50",
+      "descripcion": "We are a digitally native technology services company where innovation, design, and engineering meet scale. We use some of the latest technologies in the digital and cognitive fields to empower organizations in every aspect.",
+      "tiempo": "23-8-2021 21:44:0"
     }
   ]
 }
