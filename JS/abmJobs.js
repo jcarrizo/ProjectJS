@@ -1,11 +1,12 @@
 //Declaracion de variables
 const formularioUI = document.getElementById("formulario");
 const listaEmpleosUI = document.getElementById("listaEmpleos");
-
+let tablaUsuarios = ""
 let IdElegido = localStorage.getItem("DatoAPasar");
 document.getElementById("nameUsuario").innerHTML = localStorage.getItem("usuario");
 
 let datoId = "";
+
 
 
 //Funcion para obtener Fecha y Hora
