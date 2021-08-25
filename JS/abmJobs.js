@@ -211,13 +211,7 @@ const EditarAPI = (ID, NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descri
 
     }
     reader.readAsDataURL(file);
-
-
-
 };
-
-
-
 
 
 //Obtiene la informacion del HTML
