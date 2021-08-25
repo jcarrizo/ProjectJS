@@ -62,13 +62,11 @@
 }
 #description{
  margin-top: 20px;
+ height: 400px;
+ overflow-y: scroll;
 }
-#applyButton{
- background: #18A0FB;
- border-radius: 3px;
- height: 38px;
- padding-top: 1px;
- padding-bottom: 1px;
+div .scroll{
+ width: 30px;
 }
 ul {
  list-style-type: none;
