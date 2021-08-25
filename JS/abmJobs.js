@@ -102,9 +102,6 @@ const CargarCards = () => {
         })
 };
 
-
-
-
 //Cargar Elemento a la API
 
 const PostApi = (NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion) => {
@@ -184,9 +181,8 @@ const CargarFormulario = (id) => {
 
 const EditarAPI = (ID, NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descripcion) => {
 
-    var file = Imagen[0];
-    var reader = new FileReader();
-    reader.onloadend = function () {
+
+    if (Imagen[0] == undefined) {
 
         // console.log(datoId);
         fetch(`http://localhost:3000/jobs/${ID}`, {
@@ -195,7 +191,6 @@ const EditarAPI = (ID, NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descri
                 id: ID,
                 nombreEmpresa: NombreEmpresa,
                 web: Web,
-                logoEmpresa: reader.result,
                 puesto: Puesto,
                 tipoPF: Tipo,
                 vacante: Vacante,
@@ -209,8 +204,36 @@ const EditarAPI = (ID, NombreEmpresa, Web, Imagen, Puesto, Tipo, Vacante, Descri
             .then(response => response.json())
             .then(json => console.log(json))
 
+    } else {
+        var file = Imagen[0];
+        var reader = new FileReader();
+        reader.onloadend = function () {
+
+            // console.log(datoId);
+            fetch(`http://localhost:3000/jobs/${ID}`, {
+                method: 'PATCH',
+                body: JSON.stringify({
+                    id: ID,
+                    nombreEmpresa: NombreEmpresa,
+                    web: Web,
+                    logoEmpresa: reader.result,
+                    puesto: Puesto,
+                    tipoPF: Tipo,
+                    vacante: Vacante,
+                    descripcion: Descripcion,
+                    tiempo: FechaHora()
+                }),
+                headers: {
+                    "Content-type": "application/json; charset=UTF-8"
+                }
+            })
+                .then(response => response.json())
+                .then(json => console.log(json))
+
+        }
+        reader.readAsDataURL(file);
     }
-    reader.readAsDataURL(file);
+
 };
 
 
