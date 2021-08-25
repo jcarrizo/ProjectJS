@@ -22,14 +22,15 @@
     flex-direction: column;
 }
 .asideRightTitle{
-    background-color: blue;
+    background-color: #16133D;
+    color: ivory;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .asideRightBody{
     padding-top: 3%;
-    background-color:grey;
+    background-color:whitesmoke;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,4 +45,57 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
+}
+
+/*FRM POSTS
+---------------------------------------------------*/
+.frmPosts{
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frmTitle{
+    /* display: flex;
+    justify-content: center; */
+    padding-top: 3%;
+}
+.frmPostsInput{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.txtPosts{
+    width: 80%;
+}
+.btnPosts{
+    width: 15%;
+}
+
+/*STORIES
+-------------------------------------------*/
+.activity{
+    
+  
+}
+.posts{
+    background-color: whitesmoke;
+}
+.posterImgStory{
+    width:25%;
+    height:100%;
+    padding: 3%
+}
+.spnHour{
+    font-size: 14px;
+}
+.spnStory{
+    font-size: 20px;
+}
+.imgStory{
+    width: 100%;
+}
+.emtcStory{
+    width: 20%;
 }
