@@ -10,6 +10,13 @@
   --mainFont: 'Nunito Sans', sans-serif;
   --sideFont: 'Poppins', sans-serif;
 }
+.alertRegister{
+  width: 200px;
+  margin: auto;
+  font-family: var(--mainFont);
+  color: var(--blue);
+  text-align: center;
+}
 a{
   text-decoration: none;
   color: var(--blue);
@@ -167,5 +174,8 @@ body{
   }
   #registerBox{
     width: 80%;
+  }
+  .alertRegister{
+    color: var(--grey);  
   }
 }

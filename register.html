@@ -34,13 +34,14 @@
           <div id="registerImage"><img src="./images/Logo.svg" alt="FirstJob Logo!">FirstJob</div>
           <h5>Sign Up!</h5>
           <span>Enter your details to create your account.</span>
-          <input id="nameInput" type="text" placeholder="Full Name">
-          <input id="emailInput" type="email" placeholder="Email">
-          <input id="passwordInput" type="password" placeholder="Password">
-          <input id="passwordInput2" type="password" placeholder="Confirm Password">
+          <input required id="nameInput" type="text" placeholder="Full Name">
+          <input required id="emailInput" type="email" placeholder="Email">
+          <input required id="passwordInput" type="password" placeholder="Password">
+          <input required id="passwordInput2" type="password" placeholder="Confirm Password">
           <div id="terms"><input id="termsCheck" type="checkbox"><span> I agree to the terms and conditions. </span>
           </div>
           <div id="registerButton" onclick="GetDataHTML()">SIGN UP</div>
+          <p class="alertRegister" id="alertRegister"></p>
         </div>
       </div>
     </section>

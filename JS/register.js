@@ -19,11 +19,21 @@ const GetDataHTML = () => {
     password1 = document.getElementById("passwordInput").value;
     password2 = document.getElementById("passwordInput2").value;
     checking = document.getElementById("termsCheck").checked;
+     let alertRegister = document.getElementById("alertRegister")
+     let regexEmail =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3,4})+$/
 
 
     if (usuario != "" && email != "" && password1 != "" && password2 != "" && checking != false) {
 
-        console.log("entraste 1");
+        alertRegister.innerHTML = "REGISTER"
+
+        if (usuario.lenght <6){
+            alertRegister.innerHTML = "User is too short"
+        }
+
+        if (!regexEmail.test(email)) {
+            alertRegister.innerHTML = "Email is invalid"
+        }
 
         if (password1 == password2) {
             console.log("registrado");
@@ -38,10 +48,10 @@ const GetDataHTML = () => {
             window.location.href = "index.html";
 
         } else {
-            console.log("los Password no son iguales");
+            alertRegister.innerHTML = "Passwords don't match."
         }
     } else {
-        console.log("NO se permiten campos vacios");
+        alertRegister.innerHTML = "Empty fields are not permitted."
     }
 
 }
