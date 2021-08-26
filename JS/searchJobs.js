@@ -105,7 +105,7 @@ const CargarCards = () => {
                               <b class="col-12 mb-3">Vacantes:${element.vacante} </b>
                           </div>
                           <div class="btn-group " role="group" aria-label="Basic outlined example">
-                          <button type="button" class="btn btn-outline-primary btn-lg">Aplicar</button>
+                          <button type="button" class="btn btn-outline-primary btn-lg" onclick="AplicarTrabajo('${element.id}')">Aplicar</button>
                           </div>
                           <p class="card-text"><small class="text-muted">${element.tiempo}</small></p>
                       </div>
@@ -130,7 +130,7 @@ const CargarCards = () => {
                               <b class="col-12 mb-3">Vacantes:${element.vacante} </b>
                           </div>
                           <div class="btn-group " role="group" aria-label="Basic outlined example">
-                          <button type="button" class="btn btn-outline-primary btn-lg">Aplicar</button>
+                          <button type="button" class="btn btn-outline-primary btn-lg" onclick="AplicarTrabajo('${element.id}')">Aplicar</button>
                           </div>
                           <p class="card-text"><small class="text-muted">${element.tiempo}</small></p>
                       </div>
@@ -152,13 +152,16 @@ const CargarCards = () => {
 
 
 
-//Obtiene la informacion del HTML
+const AplicarTrabajo = (Id) => {
 
-const search = () => {
+    localStorage.setItem("DatoTrabajos", btoa(Id));
 
+    window.open("screenJob.html")
 
 
 }
+
+
 
 
 

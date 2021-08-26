@@ -37,8 +37,7 @@ const CargarCards = () => {
                           <b class="col-12 mb-3">Vacantes:${element.vacante} </b>
                       </div>
                       <div class="btn-group " role="group" aria-label="Basic outlined example">
-                          <button type="button" class="btn btn-outline-primary btn-lg" onclick="CargarFormulario('${element.id}')">Editar</button>
-                          <button type="button" class="btn btn-outline-danger btn-lg" onclick="EliminarAPI('${element.id}')">Eliminar</button>
+                          <button type="button" class="btn btn-outline-primary btn-lg" onclick="AplicarTrabajo('${element.id}')">Aplicar</button>
                       </div>
                       <p class="card-text"><small class="text-muted">${element.tiempo}</small></p>
                   </div>
@@ -63,8 +62,7 @@ const CargarCards = () => {
                           <b class="col-12 mb-3">Vacantes:${element.vacante} </b>
                       </div>
                       <div class="btn-group " role="group" aria-label="Basic outlined example">
-                          <button type="button" class="btn btn-outline-primary btn-lg" onclick="CargarFormulario('${element.id}')">Editar</button>
-                          <button type="button" class="btn btn-outline-danger btn-lg" onclick="EliminarAPI('${element.id}')">Eliminar</button>
+                          <button type="button" class="btn btn-outline-primary btn-lg" onclick="AplicarTrabajo('${element.id}')">Aplicar</button>
                       </div>
                       <p class="card-text"><small class="text-muted">${element.tiempo}</small></p>
                   </div>
@@ -77,6 +75,16 @@ const CargarCards = () => {
             });
         })
 };
+
+
+const AplicarTrabajo = (Id) => {
+
+    localStorage.setItem("DatoTrabajos", btoa(Id));
+
+    window.open("screenJob.html")
+
+
+}
 
 
 
