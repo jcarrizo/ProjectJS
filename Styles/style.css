@@ -340,3 +340,30 @@ font-size: 20px;
 text-decoration-line: none;
 
 }
+
+
+/*Comentarios*/
+
+.list-inline-item:not(:last-child) {
+  margin-right: .5rem;
+}
+.contacts-social a {
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  background: #ffffff;
+  border: 1px solid #eeecec;
+  text-align: center;
+  border-radius: 50%;
+  color: #2b2a2a;
+}
+.bg-facebook {
+  background-color: #3b5998!important;
+}
+.bg-twitter {
+  background-color: #55acee!important;
+}
+.bg-linkedin {
+  background-color: #0976b4!important;
+}
