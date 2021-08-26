@@ -152,7 +152,7 @@
 .contentHero {
   font-family: var(--sideFont);
   font-weight: 400;
-  font-size: 32px;
+  font-size: 25px;
   color: #5e6282;
   margin-bottom: 10px;
   margin-left: 15px;
@@ -167,18 +167,18 @@
   font-family: var(--mainFont);
   font-weight: bolder;
   margin-bottom: 15px;
-  font-size: 70px;
+  font-size: 95px;
 }
 .titleHero {
   font-family: var(--mainFont);
   font-weight: bolder;
   margin-bottom: 15px;
-  font-size: 70px;
+  font-size: 95px;
 }
 .buttonsHero {
   display: flex;
-  justify-content: space-around;
-  margin: 30px;
+  justify-content: center;
+  margin-top: 25px;
 }
 .btnHero {
   text-decoration: none;
@@ -193,6 +193,7 @@
 }
 #heroButtonCreate {
   background-color: var(--darkBlue);
+  margin-left: 25px;
 }
 .btnHero:hover {
   cursor: pointer;
