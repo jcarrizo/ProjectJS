@@ -26,8 +26,7 @@ const GetDataHTML = () => {
     if (usuario != "" && email != "" && password1 != "" && password2 != "" && checking != false) {
 
         if (password1 == password2) {
-            if (usuario <6) {
-                if (regexEmail.test(email)) {
+            
                     console.log("registrado");
                     
                     PostApiRegister(id, usuario, email, password1, tabla);
@@ -38,12 +37,6 @@ const GetDataHTML = () => {
                     
                     
                     window.location.href = "index.html"; 
-                } else {
-                    alertRegister.innerHTML = "Email is not valid."
-                }
-            } else {
-                alertRegister.innerHTML = "User is too short."
-            } 
         } else {
             alertRegister.innerHTML = "Passwords don't match."
         }

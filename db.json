@@ -41,6 +41,13 @@
       "email": "biancaanabella98@gmail.com",
       "password": "nonano",
       "estado": "true"
+    },
+    {
+      "id": "j2341jjw3",
+      "usuario": "Pablo Gómez",
+      "email": "gerenciacomercial@agroenergiasa.com.ar",
+      "password": "123456",
+      "estado": "true"
     }
   ],
   "jobs": [
