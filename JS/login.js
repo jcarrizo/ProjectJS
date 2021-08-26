@@ -24,6 +24,7 @@ const CompararDatos = (email, password) => {
 
                 console.log("Logeado")
 
+
                 PatchUsuarioDB(tabla, element.id);
 
                 localStorage.setItem("DatoAPasar", btoa(element.id));

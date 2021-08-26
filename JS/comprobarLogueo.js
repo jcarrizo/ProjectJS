@@ -32,6 +32,14 @@ const verificarLog = (IdElegido, tablaUsuarios) => {
           </ul>
         </div>`
 
+                botonesTrabajo.innerHTML = ` <a type="button" id="heroButtonSearch" class="btnHero btn-lg" href="searchJobs.html">SEARCH</a>
+
+                <a type="button" id="heroButtonCreate" class="btnHero btn-lg" href="abmJobs.html">OFFER JOB</a>`
+
+                botonesTrabajo2.innerHTML = ` <a type="button" id="heroButtonSearch" class="btnHero btn-lg" href="searchJobs.html">SEARCH</a>
+
+                <a type="button" id="heroButtonCreate" class="btnHero btn-lg" href="abmJobs.html">OFFER JOB</a>`
+
                 // botonesTrabajo.innerHTML = `<a href="busquedaTrabajo.html"> <button type="button" class="btn btn-outline-primary me-2">Buscar
                 // Empleo</button></a>
 

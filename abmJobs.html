@@ -22,19 +22,17 @@
                     Workovia
                 </a>
                 <div class="dropdown text-end row">
-                    <p class="fs-4 me-2 col-9 text-end " id="nameUsuario" style="color: white;"> ${data.usuario} </p>
+                    <p class="fs-4 me-2 col-9 text-end " id="nameUsuario" style="color: white;">usuario</p>
                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle col-2" id="dropdownUser1"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="#">Nuevo Empleo...</a></li>
                         <li><a class="dropdown-item" href="editarUsuario.html">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" onclick="LogOut('${tablaUsuarios}')">Sign out</a></li>
+                        <li><a class="dropdown-item" onclick="LogOut()">Sign out</a></li>
                     </ul>
                 </div>
             </div>
@@ -214,6 +212,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
+    <script src="JS/api.js"></script>
     <script src="JS/comprobarLogueo.js"></script>
     <script src="JS/abmJobs.js"></script>
 </body>

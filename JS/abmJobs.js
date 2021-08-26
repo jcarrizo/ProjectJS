@@ -1,11 +1,27 @@
 //Declaracion de variables
 const formularioUI = document.getElementById("formulario");
 const listaEmpleosUI = document.getElementById("listaEmpleos");
-let tablaUsuarios = ""
+let tablaUsuarios = "users"
 let IdElegido = localStorage.getItem("DatoAPasar");
 document.getElementById("nameUsuario").innerHTML = localStorage.getItem("usuario");
 
 let datoId = "";
+
+
+//Funcion para deslogearse
+
+const LogOut = () => {
+
+    let Id = localStorage.getItem("DatoAPasar");
+
+    LogOutDB(tablaUsuarios, atob(Id));
+
+    localStorage.setItem("DatoAPasar", "");
+    localStorage.setItem("usuario", "");
+
+    window.location.href = "index.html";
+
+}
 
 
 

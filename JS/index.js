@@ -1,12 +1,16 @@
 const botonesUI = document.getElementById("botones");
 const listaEmpleosUI = document.getElementById("listaEmpleos");
 let IdElegido = localStorage.getItem("DatoAPasar");
+
+const botonesTrabajo = document.getElementById("buttonsChange");
+const botonesTrabajo2 = document.getElementById("buttonsChange2");
 let tablaUsuarios = "users";
 
 console.log(IdElegido);
 
-verificarLog(IdElegido, tablaUsuarios);
 
+
+verificarLog(IdElegido, tablaUsuarios);
 
 const CargarCards = (dato) => {
     listaEmpleosUI.innerHTML = "";
