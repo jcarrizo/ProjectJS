@@ -60,8 +60,6 @@ const LogOut = (tablaUsuarios) => {
 
     let Id = localStorage.getItem("DatoAPasar");
 
-    console.log("Hola")
-
     LogOutDB(tablaUsuarios, atob(Id));
 
     localStorage.setItem("DatoAPasar", "");

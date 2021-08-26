@@ -28,7 +28,7 @@ const PostApiRegister = async (idTxt, usuarioTxt, emailTxt, passwordTxt, tabla) 
         estado: "true"
     }
 
-    await fetch(`${url}/${tabla}`, {
+    await fetch(`http://localhost:3000/users`, {
         method: 'POST',
         body: JSON.stringify(data),
         headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -41,7 +41,7 @@ const PostApiRegister = async (idTxt, usuarioTxt, emailTxt, passwordTxt, tabla) 
 //Cambia el estado del usuario a True
 const PatchUsuarioDB = async (tabla, id) => {
 
-    await fetch(`${url}/${tabla}/${id}`, {
+    await fetch(`http://localhost:3000/users/${id}`, {
         method: "PATCH",
         body: JSON.stringify({
             estado: "true",
@@ -58,7 +58,7 @@ const PatchUsuarioDB = async (tabla, id) => {
 //Cambia el estado del Usuario a False
 
 const LogOutDB = async (tabla, id) => {
-    await fetch(`${url}/${tabla}/${id}`, {
+    await fetch(`http://localhost:3000/users/${id}`, {
         method: "PATCH",
         body: JSON.stringify({
             estado: "false",
