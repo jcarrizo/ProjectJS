@@ -1,5 +1,9 @@
 /* Estilos del CARRUSEL empresas*/
 @charset "UTF-8";
+.companiesCarousel{
+  display: flex;
+  justify-content: center;
+}
 .marginCarouselSection {
   max-height: 200px;
 }
@@ -107,7 +111,6 @@
   z-index: 1;
   transition: 1s ease;
 }
-
 .carouselF {
   max-width: 100%;
   margin: auto;
@@ -137,6 +140,8 @@
   width: 100%;
   margin: none;
   padding: none;
+  display: flex;
+  align-items: center;
 }
 .row {
   margin: 0;
@@ -159,7 +164,7 @@
 }
 .subTitleHero {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
   color: var(--blue);
   margin: 10px;
 }
@@ -178,7 +183,7 @@
 .buttonsHero {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .btnHero {
   text-decoration: none;
@@ -197,10 +202,10 @@
 }
 .btnHero:hover {
   cursor: pointer;
-  color: var(--blue);
+  border: var(--blue) solid 2px;
 }
 #heroButtonCreate:hover {
-  color: #16133d;
+  border: var(--darkBlue) solid 2px;
 }
 .btnHero::before {
   content: "";
@@ -246,6 +251,8 @@
 /* Estilos del CARRUSEL Bianca */
 .carouselPositionJobs {
   justify-content: space-around;
+  margin: 50px 20px;
+  align-items: center;
 }
 .buttonCarousel {
   background-color: var(--darkBlue);
@@ -276,21 +283,49 @@
 
 /* Estilos del FOOTER */
 footer {
-  background-color: #16133d;
+  background-color: var(--darkBlue);
+  width: 100%;
+}
+footer ul {
+  list-style-type: none;
+  text-align: left;
+
+  }
+.imgFooter{
+  width: 50;
 }
 .footerItem {
   font-family: var(--sideFont);
   font-size: 14px;
-  color: gray;
+  color: var(--grey);
 }
 .footerSubtitle {
   font-size: 24px;
-  color: ivory;
+  color: var(--grey);
 }
 .footerTitle {
-  font-size: 38px;
-  color: ivory;
+  font-size: 50px;
+  color: var(--grey);
 }
 .footerNetworks {
   width: 30px;
+}
+.social{
+  justify-content: center;
+}
+.footerRedes{
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  border-radius: 30%;
+  background-color: var(--grey);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
