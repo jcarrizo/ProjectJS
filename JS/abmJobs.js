@@ -36,7 +36,10 @@ const ID = () => {
 //json-server --watch db.json
 
 const CargarCards = () => {
+
     listaEmpleosUI.innerHTML = "";
+
+
 
     fetch('http://localhost:3000/jobs')
         .then(response => response.json())
@@ -44,11 +47,13 @@ const CargarCards = () => {
 
             json.forEach((element) => {
 
+                console.log(element);
 
                 var image = new Image();
                 image.src = element.logoEmpresa;
 
                 if (element.tipoPF == "1") {
+
                     listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
           <div class="row g-0">
               <div class="col-md-4 mt-5">
