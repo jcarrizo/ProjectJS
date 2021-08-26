@@ -31,6 +31,7 @@
  flex-wrap: wrap;
  justify-items: center;
  align-items: center;
+ margin-left: 100px;
 }
 .businessInfo p{
  margin: auto;
@@ -44,8 +45,8 @@
  font-size: 13px;
 }
 #imageEmpresas{
- width: 80%;
- height: 30%;
+ width: 90%;
+ height: 40%;
  margin: auto;
  border-radius: 10%;
 }
@@ -66,25 +67,14 @@
  height: 400px;
  overflow-y: scroll;
 }
-div .scroll{
- width: 30px;
+.buttonAply{
+ display: flex;
+ justify-content: center;
 }
-ul {
- list-style-type: none;
- padding: 0;
- margin: 4px;
- color: var(--darkBlue);
- }
- li::before{
-  content:"";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background-image: url(../images/Logo.svg);
-  background-position: center;
-  background-size: cover;
-  margin-right: 5px;
- }
+#applybtn{
+ margin: auto;
+ width: 70%;
+}
  @media (max-width: 700px) {
   .employmentScreen{
    flex-direction: column-reverse;
@@ -98,6 +88,7 @@ ul {
    justify-content: left;
   }
   #imageEmpresas{
-   height: 35%;
+   height: 45%;
+   width: 90%;
   }
  }
