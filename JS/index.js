@@ -27,7 +27,7 @@ const CargarCards = (dato) => {
                     image.src = element.logoEmpresa;
 
                     if (element.tipoPF == "1") {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
@@ -60,7 +60,7 @@ const CargarCards = (dato) => {
                     image.src = element.logoEmpresa;
 
                     if (element.tipoPF == "2") {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
@@ -95,7 +95,7 @@ const CargarCards = (dato) => {
                     image.src = element.logoEmpresa;
 
                     if (element.tipoPF == "1") {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
@@ -120,7 +120,7 @@ const CargarCards = (dato) => {
         
           <div class="" style="width: 1%;"></div>`;
                     } else {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">

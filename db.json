@@ -3,7 +3,7 @@
     {
       "id": "123",
       "usuario": "juan",
-      "email": "@hotmail",
+      "email": "juan@hotmail",
       "password": "123",
       "estado": "true"
     },
