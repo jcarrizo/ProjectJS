@@ -1,5 +1,9 @@
 const listaEmpleosUI = document.getElementById("listaEmpleos");
+const botonesUI = document.getElementById("botones");
+let IdElegido = localStorage.getItem("DatoAPasar");
+let tablaUsuarios = "users";
 
+verificarLog(IdElegido, tablaUsuarios);
 
 //Cargar Cards de Empleos
 
@@ -29,7 +33,7 @@ const CargarCards = () => {
                     image.src = element.logoEmpresa;
 
                     if (element.tipoPF == "1") {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4  col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
@@ -54,7 +58,7 @@ const CargarCards = () => {
         
           <div class="" style="width: 1%;"></div>`;
                     } else {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4  col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
@@ -90,7 +94,7 @@ const CargarCards = () => {
                     image.src = element.logoEmpresa;
 
                     if (element.tipoPF == "1") {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4  col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
@@ -115,7 +119,7 @@ const CargarCards = () => {
         
           <div class="" style="width: 1%;"></div>`;
                     } else {
-                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                        listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4  col-md-5" style="max-width: 100%;">
               <div class="row g-0">
                   <div class="col-md-4 mt-5">
                       <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">

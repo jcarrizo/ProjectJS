@@ -1,26 +1,30 @@
 const listaEmpleoUI = document.getElementById("Formulario");
 let IdElegido = localStorage.getItem("DatoAPasar");
+const botonesUI = document.getElementById("botones");
+let tablaUsuarios = "users";
+
+verificarLog(IdElegido, tablaUsuarios);
 
 
 const CargarCards = () => {
 
 
-    listaEmpleoUI.innerHTML = "";
+  listaEmpleoUI.innerHTML = "";
 
-    let IdElegido = localStorage.getItem("DatoTrabajos");
+  let IdElegido = localStorage.getItem("DatoTrabajos");
 
-    console.log(atob(IdElegido));
+  console.log(atob(IdElegido));
 
-    fetch(`http://localhost:3000/jobs/${atob(IdElegido)}`)
-        .then(response => response.json())
-        .then(json => {
+  fetch(`http://localhost:3000/jobs/${atob(IdElegido)}`)
+    .then(response => response.json())
+    .then(json => {
 
-            var image = new Image();
-            image.src = json.logoEmpresa;
+      var image = new Image();
+      image.src = json.logoEmpresa;
 
 
-            if (json.tipoPF == "1") {
-                listaEmpleoUI.innerHTML = ` <section class="row employmentScreen" id="Formulario">
+      if (json.tipoPF == "1") {
+        listaEmpleoUI.innerHTML = ` <section class="row employmentScreen" id="Formulario">
                 <section class="jobDescription col-lg-6 col-12">
                   <h4 id="job">Position: ${json.puesto}</h4>
                   <h3>Description</h3>
@@ -44,8 +48,8 @@ const CargarCards = () => {
                   </ul>
                 </section>
               </section>`
-            } else {
-                listaEmpleoUI.innerHTML = ` <section class="row employmentScreen" id="Formulario">
+      } else {
+        listaEmpleoUI.innerHTML = ` <section class="row employmentScreen" id="Formulario">
                 <section class="jobDescription col-lg-6 col-12">
                   <h4 id="job">Position: ${json.puesto}</h4>
                   <h3>Description</h3>
@@ -69,9 +73,9 @@ const CargarCards = () => {
                   </ul>
                 </section>
               </section>`
-            }
+      }
 
-        })
+    })
 };
 
 document.addEventListener("DOMContentLoaded", CargarCards());

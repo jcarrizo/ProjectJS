@@ -1,18 +1,21 @@
 //Declaracion de variables
 const formularioUI = document.getElementById("formulario");
 const listaEmpleosUI = document.getElementById("listaEmpleos");
-let tablaUsuarios = "users"
+let tablaUsuarios = "users";
 let IdElegido = localStorage.getItem("DatoAPasar");
 document.getElementById("nameUsuario").innerHTML = localStorage.getItem("usuario");
 
 let datoId = "";
 
 
-//Funcion para deslogearse
 
-const LogOut = () => {
+verificarLog(IdElegido, tablaUsuarios);
+
+const LogOute = (tablaUsuarios) => {
 
     let Id = localStorage.getItem("DatoAPasar");
+
+    console.log("Hola")
 
     LogOutDB(tablaUsuarios, atob(Id));
 
@@ -22,7 +25,6 @@ const LogOut = () => {
     window.location.href = "index.html";
 
 }
-
 
 
 //Funcion para obtener Fecha y Hora
@@ -68,7 +70,7 @@ const CargarCards = () => {
 
                 if (element.tipoPF == "1") {
 
-                    listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                    listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-md-5" style="max-width: 100%;">
           <div class="row g-0">
               <div class="col-md-4 mt-5">
                   <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">
@@ -94,7 +96,7 @@ const CargarCards = () => {
     
       <div class="" style="width: 1%;"></div>`;
                 } else {
-                    listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-5" style="max-width: 100%;">
+                    listaEmpleosUI.innerHTML += `<div class="card border-primary text-dark bg-light mb-4 col-md-5" style="max-width: 100%;">
           <div class="row g-0">
               <div class="col-md-4 mt-5">
                   <img src="${image.src}" class="img-fluid rounded-start p-2" alt="...">

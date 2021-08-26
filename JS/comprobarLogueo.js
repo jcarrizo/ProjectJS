@@ -24,9 +24,7 @@ const verificarLog = (IdElegido, tablaUsuarios) => {
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
           </a>
           <ul class="dropdown-menu text-small col-4" aria-labelledby="dropdownUser1">
-            <li><a class="dropdown-item" href="#">Nuevo Empleo...</a></li>
-            <li><a class="dropdown-item" href="editarUsuario.html">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="abmJobs.html">Nuevo Empleo...</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" onclick="LogOut('${tablaUsuarios}')">Sign out</a></li>
           </ul>
