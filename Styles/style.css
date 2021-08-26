@@ -153,6 +153,7 @@
 .textHero {
   padding-top: 12px;
   padding-left: 30px;
+
 }
 .contentHero {
   font-family: var(--sideFont);
@@ -179,6 +180,7 @@
   font-weight: bolder;
   margin-bottom: 15px;
   font-size: 95px;
+  max-width: 75%;
 }
 .buttonsHero {
   display: flex;
@@ -246,6 +248,7 @@
   }
   .titleHero {
     font-size: 60px;
+    max-width: 100%;
   }
 }
 /* Estilos del CARRUSEL Bianca */
@@ -328,4 +331,12 @@ footer ul {
   justify-content: center;
   align-items: center;
   margin: 10px;
+}
+
+
+.textSearchJobs{
+color: white;
+font-size: 20px;
+text-decoration-line: none;
+
 }

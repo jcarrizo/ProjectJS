@@ -1,6 +1,7 @@
 const listaEmpleoUI = document.getElementById("Formulario");
 let IdElegido = localStorage.getItem("DatoAPasar");
 const botonesUI = document.getElementById("botones");
+const botonesChangeUI = document.getElementById("buttonAplyChange");
 let tablaUsuarios = "users";
 
 verificarLog(IdElegido, tablaUsuarios);
@@ -24,15 +25,18 @@ const CargarCards = () => {
 
 
       if (json.tipoPF == "1") {
-        listaEmpleoUI.innerHTML = ` <section class="row employmentScreen" id="Formulario">
+        listaEmpleoUI.innerHTML = `
+         
+        <section class="row employmentScreen" id="Formulario">
                 <section class="jobDescription col-lg-6 col-12">
                   <h4 id="job">Position: ${json.puesto}</h4>
                   <h3>Description</h3>
                   <div data-bs-spy="scroll" data-bs-offset="0" class="scrollspy" tabindex="0">
                     <p id="description">${json.descripcion} </p>
                   </div>
-                  <section class="buttonAply">
-                    <button type="button" onclick="Apply" id="applybtn" class="btn btn-outline-primary">APPLY!</button>
+                  <section class="buttonAply" id="buttonAplyChange">
+                    <button type="button" onclick="ApplyChange()" id="applybtn" class="btn btn-outline-primary">APPLY!</button>
+     
                   </section>
                 </section>
                 <section class="businessInfo col-lg-3 col-12">
@@ -46,6 +50,7 @@ const CargarCards = () => {
                     <li id="category">Category: I.T </li>
                     <li id="web">Web: ${json.web}</li>
                   </ul>
+                  
                 </section>
               </section>`
       } else {
@@ -56,8 +61,8 @@ const CargarCards = () => {
                   <div data-bs-spy="scroll" data-bs-offset="0" class="scrollspy" tabindex="0">
                     <p id="description">${json.descripcion} </p>
                   </div>
-                  <section class="buttonAply">
-                    <button type="button" onclick="Apply" id="applybtn" class="btn btn-outline-primary">APPLY!</button>
+                  <section class="buttonAply" id="buttonAplyChange">
+                    <button type="button" onclick="ApplyChange()" id="applybtn" class="btn btn-outline-primary">APPLY!</button>              
                   </section>
                 </section>
                 <section class="businessInfo col-lg-3 col-12">
@@ -77,5 +82,7 @@ const CargarCards = () => {
 
     })
 };
+
+
 
 document.addEventListener("DOMContentLoaded", CargarCards());
