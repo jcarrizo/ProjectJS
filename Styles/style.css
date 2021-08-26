@@ -202,10 +202,10 @@
 }
 .btnHero:hover {
   cursor: pointer;
-  color: var(--blue);
+  border: var(--blue) solid 2px;
 }
 #heroButtonCreate:hover {
-  color: #16133d;
+  border: var(--darkBlue) solid 2px;
 }
 .btnHero::before {
   content: "";
