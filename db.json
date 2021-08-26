@@ -13,6 +13,34 @@
       "email": "marcos01@gmail.com",
       "password": "qwerty",
       "estado": "false"
+    },
+    {
+      "id": "0tpw229wh",
+      "usuario": "Pablo Gómez",
+      "email": "m.com",
+      "password": "987654",
+      "estado": "true"
+    },
+    {
+      "id": "01r0tdkmu",
+      "usuario": "Bianca Ponce",
+      "email": "biancaan",
+      "password": "123456",
+      "estado": "true"
+    },
+    {
+      "id": "c9rk5nk9q",
+      "usuario": "Bianca Ponce",
+      "email": "biancaanabella98gmail.com",
+      "password": "654987",
+      "estado": "true"
+    },
+    {
+      "id": "u35s0qh8c",
+      "usuario": "bf",
+      "email": "biancaanabella98@gmail.com",
+      "password": "nonano",
+      "estado": "true"
     }
   ],
   "jobs": [

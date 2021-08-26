@@ -25,33 +25,30 @@ const GetDataHTML = () => {
 
     if (usuario != "" && email != "" && password1 != "" && password2 != "" && checking != false) {
 
-        alertRegister.innerHTML = "REGISTER"
-
-        if (usuario.lenght <6){
-            alertRegister.innerHTML = "User is too short"
-        }
-
-        if (!regexEmail.test(email)) {
-            alertRegister.innerHTML = "Email is invalid"
-        }
-
         if (password1 == password2) {
-            console.log("registrado");
-
-            PostApiRegister(id, usuario, email, password1, tabla);
-
-            localStorage.setItem("DatoAPasar", btoa(id));
-
-            localStorage.setItem("usuario", usuario);
-
-
-            window.location.href = "index.html";
-
+            if (usuario <6) {
+                if (regexEmail.test(email)) {
+                    console.log("registrado");
+                    
+                    PostApiRegister(id, usuario, email, password1, tabla);
+                    
+                    localStorage.setItem("DatoAPasar", btoa(id));
+                    
+                    localStorage.setItem("usuario", usuario);
+                    
+                    
+                    window.location.href = "index.html"; 
+                } else {
+                    alertRegister.innerHTML = "Email is not valid."
+                }
+            } else {
+                alertRegister.innerHTML = "User is too short."
+            } 
         } else {
             alertRegister.innerHTML = "Passwords don't match."
         }
     } else {
         alertRegister.innerHTML = "Empty fields are not permitted."
     }
-
+    
 }
