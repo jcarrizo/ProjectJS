@@ -1,5 +1,9 @@
 /* Estilos del CARRUSEL empresas*/
 @charset "UTF-8";
+.companiesCarousel{
+  display: flex;
+  justify-content: center;
+}
 .marginCarouselSection {
   max-height: 200px;
 }
@@ -137,6 +141,8 @@
   width: 100%;
   margin: none;
   padding: none;
+  display: flex;
+  align-items: center;
 }
 .row {
   margin: 0;
@@ -159,7 +165,7 @@
 }
 .subTitleHero {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
   color: var(--blue);
   margin: 10px;
 }
@@ -178,7 +184,7 @@
 .buttonsHero {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .btnHero {
   text-decoration: none;
@@ -246,6 +252,8 @@
 /* Estilos del CARRUSEL Bianca */
 .carouselPositionJobs {
   justify-content: space-around;
+  margin: 50px 20px;
+  align-items: center;
 }
 .buttonCarousel {
   background-color: var(--darkBlue);
