@@ -276,21 +276,46 @@
 
 /* Estilos del FOOTER */
 footer {
-  background-color: #16133d;
+  background-color: var(--darkBlue);
+}
+footer ul {
+  list-style-type: none;
+  }
+.imgFooter{
+  width: 50;
 }
 .footerItem {
   font-family: var(--sideFont);
   font-size: 14px;
-  color: gray;
+  color: var(--grey);
 }
 .footerSubtitle {
   font-size: 24px;
-  color: ivory;
+  color: var(--grey);
 }
 .footerTitle {
-  font-size: 38px;
-  color: ivory;
+  font-size: 50px;
+  color: var(--grey);
 }
 .footerNetworks {
   width: 30px;
+}
+.social{
+  justify-content: center;
+}
+.footerRedes{
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  border-radius: 30%;
+  background-color: var(--grey);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
